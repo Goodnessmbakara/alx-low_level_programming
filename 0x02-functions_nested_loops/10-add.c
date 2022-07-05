@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * add -> adds two numbers a and b
- * @x : parameter1
- * @y : parameter2
- * Return: x + y
+ * add - returns the sum of  the given parameters
+ * @a: int type number
+ * @b: int type number
+ * Return: 0
  */
 
-int add(int x, int y)
+int add(int a, int b)
 {
-	return (x + y);
+return (a + b);
 }
