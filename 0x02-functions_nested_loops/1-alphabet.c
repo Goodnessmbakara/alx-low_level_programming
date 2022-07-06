@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
- *  *print_alphabet - Alphabet in lowercase
- *   *
- *    *Return:0
- *     *
+ * print_alphabet - Begin entry
+ *Return: 0
  */
+
 void print_alphabet(void)
 {
-	char r;
+	char c = 'a';
 
-	for (r = 'a'; r <= 'z'; r++)
+	while (c <= 'z')
 	{
-		_putchar(r);
+		_putchar(c);
+		c++;
+
 	}
 	_putchar('\n');
+
 }
