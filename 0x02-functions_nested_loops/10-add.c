@@ -1,13 +1,35 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * add - returns the sum of  the given parameters
- * @a: int type number
- * @b: int type number
- * Return: 0
+ *  * print_to_98 - from n to 98
+ *   * @n: integer
+ *    *
+ *     * Return: this function print from n to 98
  */
-
-int add(int a, int b)
+void print_to_98(int n)
 {
-return (a + b);
+	if (n < 98)
+	{
+		for (; n <= 98; n++)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+		}
+	}
+	else
+	{
+		for (; n >= 98; n--)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+		}
+	}
+
+	printf("\n");
 }
