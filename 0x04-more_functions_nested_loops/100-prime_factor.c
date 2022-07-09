@@ -1,23 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - prime factor
+ * main - print the largest prime factor of an int
  *
- * Return: 0
+ * Return: 0 if successful
+ *
  */
+
 int main(void)
 {
-	long int n, pf;
+	long int var = 612852475143;
+	long int primeFact = 2;
 
-	n = 612852475143;
-	for (pf = 2; pf <= n; pf++)
+	while (var > 1)
 	{
-		if (n % pf == 0)
-		{
-			n /= pf;
-			pf--;
-		}
+		if (var % primeFact == 0)
+			var /= primeFact;
+		else
+			primeFact++;
 	}
-	printf("%ld\n", pf);
+	printf("%ld\n", primeFact);
 	return (0);
 }
