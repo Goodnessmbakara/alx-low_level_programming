@@ -1,1 +1,1 @@
-C - Even more pointers, arrays and strings
+Thid is a readme
