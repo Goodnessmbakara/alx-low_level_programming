@@ -1,20 +1,15 @@
+#include <ctype.h>
 #include "main.h"
 
 /**
- * _isdigit - check for digit
+ * _isdigit - check if a var is digit
+ * @var: variable to be checked
  *
- * @c: integer
- *
- * Return: 1 if it is a digit
+ * Return: 1 if var is digit, else 0
  */
-int _isdigit(int c)
+int _isdigit(int var)
 {
-	if (c >= 48 && c <= 57)
-	{
+	if (isdigit(var))
 		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (0);
 }
