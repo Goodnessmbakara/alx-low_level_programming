@@ -1,25 +1,21 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
- * * _strchr -> string character
- * * @s: string given
- * * @c: another char
- * * Return: a string
+ * _strchr - This finds the first occurence of a char in a string
+ * @s: The string to be searched
+ * @c: The character the be found
+ *
+ * Return: Pointer to the first occurence of the char or null
  */
 char *_strchr(char *s, char c)
 {
-	int a;
+	int i;
 
-	while (1)
+	for (i = 0; s[i] != '\n'; i++)
 	{
-		a = *s++;
-		if (a == c)
-		{
-			return (s - 1);
-		}
-		if (a == 0)
-		{
-			return (NULL);
-		}
+		if (s[i] == c)
+			return (&s[i]);
 	}
+	return (NULL);
 }
